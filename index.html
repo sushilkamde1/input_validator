@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <form action="#">
+        <input type="password" name="" id="myPassword" />
+        <i class="far fa-eye" id="eye" onclick="showToggle()"></i>
+      </form>
+    </div>
+    <div class="message" id="message">
+      <i class="fas fa-times" id="numberIcon"></i>
+      <p class="password-contain" id="number">Must have numbers</p>
+
+      <i class="fas fa-times" id="charIcon"></i>
+      <p class="password-contain" id="specialCHAR">
+        Must have a special char !
+      </p>
+
+      <i class="fas fa-times" id="chapitalIcon"></i>
+      <p class="password-contain" id="capital">A Uppercase letter !</p>
+
+      <i class="fas fa-times" id="lengthIcon"></i>
+      <p class="password-contain" id="length">Should be 8 characters</p>
+    </div>
+  </body>
+</html>
